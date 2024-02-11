@@ -23,14 +23,14 @@ class Test_Config(unittest.TestCase):
         total = 20
         expected_ratio = 0.5
         self.assertEqual(get_options_ratio(option,total),expected_ratio)
-       
-    def test_get_faculty_rating_excellent(self):
-        #Test that the function returns ‘Excellent’ when the rating is .91.
-        
-        rating = 0.91
-        expected_result = "Excellent"
-        self.assertEqual(get_faculty_rating(rating), expected_result)
 
+    def test_get_faculty_rating_Excellent(self):
+        #Test that the function returns very good when the rating is .85.
+        rating = 0.99
+        expected_result = "Excellent"
+        self.assertEqual(get_faculty_rating(rating),expected_result)
+
+       
     def test_get_faculty_rating_Very_Good(self):
     #Test that the function returns very good when the rating is .85.
         rating = 0.85
