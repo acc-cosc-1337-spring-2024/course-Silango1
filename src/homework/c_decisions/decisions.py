@@ -1,22 +1,10 @@
-#
-def get_options_ratio(option,total):
-     if total != 0:
-          ratio = option / total
-          return ratio
-     else:
-          return "Total can not be Zero"
+# decisions.py
 
-def get_faculty_rating(ratio):
-    rating = ""
-    if (ratio >= 0.9 and ratio < 1):
-         rating == "Excellent"
-    elif (ratio >= 0.8):
-         rating = "Very Good"
-    elif (ratio >= 0.7):
-         rating = "Good"
-    elif (ratio >= 0.6):
-         rating = "Needs Improvement"
-    else:
-         rating = "Unacceptable"
-
-    return rating
+def sum_odd_numbers(num):
+    total = 0
+    i = 1
+    while i <= num:
+        if i % 2 != 0:
+            total += i
+        i += 1
+    return total
